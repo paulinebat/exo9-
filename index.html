@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video id="video" autoplay playsinline width="400">Flux non disponible</video>
+    <br>
+    <button id="btn-start">Démarrer la caméra</button>
+
+    <hr>
+
+    <h2>Rendus des photos</h2>
+    <div>
+        <h3>Méthode grabFrame() (Canvas)</h3>
+        <button id="btn-grab" disabled>Capturer frame</button>
+        <br>
+        <canvas id="canvas"></canvas>
+        <a id="download-canvas" download="photo-frame.png">Télécharger</a>
+    </div>
+
+    <div>
+        <h3>Méthode takePhoto() (Image)</h3>
+        <button id="btn-photo" disabled>Prendre photo</button>
+        <br>
+        <img id="photo" alt="Résultat takePhoto" width="500">
+        <a id="download-photo" download="photo-hd.jpg">Télécharger en format HD</a>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
